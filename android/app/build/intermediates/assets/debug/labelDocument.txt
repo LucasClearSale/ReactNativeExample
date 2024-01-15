@@ -1,0 +1,10 @@
+cnh_back
+rg_front
+cnh_digital_front
+cnh_digital_back
+rg_back
+discard
+cnh_front
+cnh_open
+cnh_digital_open
+rg_open

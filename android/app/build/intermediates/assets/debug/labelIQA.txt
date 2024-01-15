@@ -1,0 +1,5 @@
+high_gamma
+low_gamma
+noisy
+blurred
+good

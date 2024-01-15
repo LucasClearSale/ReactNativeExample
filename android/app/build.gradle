@@ -73,11 +73,10 @@ android {
     ndkVersion rootProject.ext.ndkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
-
     namespace "com.iosreact"
     defaultConfig {
         applicationId "com.iosreact"
-        minSdkVersion rootProject.ext.minSdkVersion
+        minSdkVersion 21
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
@@ -108,6 +107,7 @@ dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
     implementation("com.facebook.react:react-android")
     implementation("com.facebook.react:flipper-integration")
+    implementation 'sale.clear.studio:documentoscopy-sdk:2.0.4-hml'
 
     if (hermesEnabled.toBoolean()) {
         implementation("com.facebook.react:hermes-android")
