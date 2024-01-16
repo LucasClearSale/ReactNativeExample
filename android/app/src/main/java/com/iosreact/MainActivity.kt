@@ -30,7 +30,7 @@ class MainActivity : ReactActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        CSDocumentoscopySDK.initialize(this, CSDocumentoscopy(clientID = "TAG", clientSecret = "TAG", cpf = "TAG", identifierId = "TAG"), object:
+        CSDocumentoscopySDK.initialize(application, CSDocumentoscopy(clientID = "", clientSecret = "", cpf = "", identifierId = ""), object:
             CSDocumentoscopySDKListener {
             override fun didOpen(){
                 Log.d("TAG", "SDK Foi Aberto")
@@ -44,6 +44,7 @@ class MainActivity : ReactActivity() {
             }
             override fun didFinishCapture(result: CSDocumentoscopySDKResult){
                 val sessionIdText = "Session Id: " + result.sessionId
+                Log.d("TAG", sessionIdText)
             }
         })
     }

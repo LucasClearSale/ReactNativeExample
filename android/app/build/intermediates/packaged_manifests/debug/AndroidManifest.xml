@@ -8,7 +8,12 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="34" />
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
     <!--
     This manifest file is used only by Gradle to configure debug-only capabilities
     for React Native Apps.
@@ -24,7 +29,7 @@
     <uses-permission android:name="com.iosreact.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
-        android:name="com.clear.studio.csdocs.di.CSDocumentoscopyApplication"
+        android:name="com.iosreact.MainApplication"
         android:allowBackup="false"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:configChanges="fontScale"
