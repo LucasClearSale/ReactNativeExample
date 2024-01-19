@@ -1,6 +1,7 @@
 #import <UIKit/UIKit.h>
 
 #import "AppDelegate.h"
+#import "iOSReact-Bridging-Header.h"
 
 int main(int argc, char *argv[])
 {
