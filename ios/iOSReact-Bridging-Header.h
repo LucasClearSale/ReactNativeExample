@@ -7,7 +7,7 @@
 @class CSDocumentoscopyBridget;
 
 @interface CSDocumentoscopyBridget
-- (void)callSDKWithNavigation:(UINavigationController *)navigation;
+- (void)callSDKWithViewController:(UIViewController *)viewController;
 @end
 
 

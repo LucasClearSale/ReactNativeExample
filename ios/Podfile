@@ -29,7 +29,7 @@ target 'iOSReact' do
   config = use_native_modules!
     use_frameworks! :linkage => :static
 
-    pod 'CSDocumentoscopySDK', :git => 'https://CS-Package: ADICIONE SUA CHAVE AQUI @dev.azure.com/CS-Package/ID-Lab-PackagesSDK/_git/CSDocumentoscopySDK', :tag => '2.0.6a-hml'
+    pod 'CSDocumentoscopySDK', :git => 'https://CS-Package: ADICIONE SUA CHAVE AQUI @dev.azure.com/CS-Package/ID-Lab-PackagesSDK/_git/CSDocumentoscopySDK', :tag => '2.0.7-hml'
     pod 'RNSentry', :path => '../node_modules/@sentry/react-native/RNSentry.podspec'
 
   use_react_native!(

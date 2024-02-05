@@ -27,7 +27,7 @@ class CSDocumentoscopyBridget: NSObject {
     
     // MARK: - Public Functions
 
-    @objc public func callSDK(navigation: UINavigationController) {
+    @objc public func callSDK(viewController: UIViewController) {
         let sdk = CSDocumentoscopy()
         sdk.delegate = self
         sdk.initialize(
@@ -35,7 +35,7 @@ class CSDocumentoscopyBridget: NSObject {
             clientSecret: Constants.clientSecret,
             identifierId: Constants.identifierId,
             cpf: Constants.cpf,
-            navigationController: navigation)
+            viewController: viewController)
     }
 }
 
